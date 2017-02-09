@@ -7,7 +7,7 @@ INSTALL_REQUIRES = [
 
 setup(
     name='powerkube',  # Heavily inspired by the powerline-kubernetes library
-    version='1.0.0',
+    version='0.1.0',
     description='A powerline segment to show kubernetes context items, with toggling and alert color functionality',
     author='Zach Marine',  # powerline-kubernetes was written by Vincent De Smet
     author_email='zcmarine@gmail.com',  # vincent.drl@gmail.com
