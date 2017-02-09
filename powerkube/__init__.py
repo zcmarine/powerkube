@@ -29,14 +29,18 @@ def context(pl, segment_info, show_cluster=False, show_namespace=True, show_user
     in your terminal
     '''
     pl.debug('Running powerline-kubernetes')
+
+    render_context = segment_info['environ'].get('RENDER_POWERLINE_KUBERNETES', 'YES')
+    if render_context != 'YES':
+        return []
+
     try:
         context = kubernetes.K8sConfig().current_context_dict
     except Exception as e:
         pl.error(e)
         return
 
-    render_context = segment_info['environ'].get('RENDER_POWERLINE_KUBERNETES', 'YES')
-    if render_context != 'YES' or not any([show_cluster, show_namespace, show_user]):
+    if not any([show_cluster, show_namespace, show_user]):
         return []
 
     segments_list = []
