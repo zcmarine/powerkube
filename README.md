@@ -57,17 +57,17 @@ Note that powerkube currently only supports Python 2.7 due to a dependency, `kub
 
 4. You may need to reload powerline with `powerline-daemon --replace` to load the new settings. That's it!
 
-By default powerkube will render the kubernetes context if the enviroment variable `RENDER_POWERLINE_KUBERNETES` is either set to `YES` or is not set at all. Rather than setting this variable manually, you can create a simple `kshow` function by placing the following to your `~/.bash_profile`:
+5. (Optional) By default powerkube will render the kubernetes context if the enviroment variable `RENDER_POWERLINE_KUBERNETES` is either set to `YES` or is not set at all. Rather than setting this variable manually, you can create a simple `kshow` function by placing the following to your `~/.bash_profile`:
 
-```bash
-kshow() {
-    if [[ $RENDER_POWERLINE_KUBERNETES = "NO" ]]; then
-	export RENDER_POWERLINE_KUBERNETES=YES
-    else
-	export RENDER_POWERLINE_KUBERNETES=NO
-    fi
-}
-```
+    ```bash
+    kshow() {
+        if [[ $RENDER_POWERLINE_KUBERNETES = "NO" ]]; then
+	    export RENDER_POWERLINE_KUBERNETES=YES
+        else
+	    export RENDER_POWERLINE_KUBERNETES=NO
+        fi
+    }
+    ```
 
 You're all set up! Happy coding!
 
