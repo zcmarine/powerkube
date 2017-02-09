@@ -8,22 +8,22 @@ Powerkube is a [Powerline](https://github.com/powerline/powerline) segment that 
 Two other nifty features that it has are:
 
 1. The ability to toggle on or off the powerkube segment using an environment variable which can easily be mapped to a function in your `~/.bash_profile`.
-2. The ability to define namespaces to color differently. For example, you could have your production namespaces be colored in bright red.
+2. The ability to define certain namespaces to be colored differently for alerting purposes. For example, you could have your production namespaces show up in bright red.
 
 
 The screenshot below demonstrates this functionality:
 
-<img src="usage_screenshot.png" width="600">
+<img src="usage_screenshot.png" width="800">
 
 Note that powerkube currently only supports Python 2.7 due to a dependency, `kubernetes-py`, only being Python 2.7 compatible.
 
 ## Installation
 
-1. **Add the Python package**.  In terms of Python installation, powerkube is not yet on pypi so we will need to either clone or download the repo and run `python setup.py install` to add it to our $PATH. We can verify that it has been correctly installed by running the following command from the terminal:
+1. **Add the Python package**.  Powerkube is not yet on pypi so we will need to either clone or download the repo and run `python setup.py install` to add it to our $PATH. We can verify that it has been correctly installed by running the following command from the terminal:
 
-```python
-python -c "import powerkube; print powerkube.__file__"
-```
+..```python
+.. python -c "import powerkube; print powerkube.__file__"
+..```
 
 2. **Create a user configuration directory**. Once powerkube has been installed, we'll need to add it to our powerline shell's theme and colorscheme. The best way to do this is to alter our powerline user config, which will override the powerline defaults. If you don't already have a `~/.config/powerline/` folder, create it. Next we'll be copying some of the default powerline configs into this location. Find where powerline is installed by using `pip show powerline-status | grep 'Location'`, then navigate to the `config_files/` folder there. We'll be copying `config.json`, `themes/shell/default.json`, and `colorschemes/shell/default.json` to our `~/.config/powerline/` folder, adding the necessary folders to match that original file structure (i.e. adding the `themes/` and `colorschemes/` folders, etc.
 
