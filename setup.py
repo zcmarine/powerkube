@@ -1,8 +1,8 @@
 from setuptools import setup
 
 INSTALL_REQUIRES = [
-    'kubernetes-py>=1.4.7.7',
-    'powerline-status>=2.5.2',
+    'kubernetes-py',
+    'powerline-status',
     ]
 
 setup(
