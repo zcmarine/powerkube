@@ -29,29 +29,29 @@ Note that powerkube currently only supports Python 2.7 due to a dependency, `kub
 
 3. **Add powerkube to your user config**. Within our user config, we'll need to add the powerkube segment to our shell by adding the following lines to our `~/.config/powerline/themes/shell/default.json`:
 
-```json
-{
-	"function": "powerkube.context",
-	"priority": 30,
-	"args": {"show_cluster": true,
-		 "show_namespace": true,
-		 "show_user": true,
-		 "alert_namespaces": ["data-prod", "infra-prod"]}
-}
-```
+    ```json
+    {
+	    "function": "powerkube.context",
+	    "priority": 30,
+	    "args": {"show_cluster": true,
+		     "show_namespace": true,
+		     "show_user": true,
+		     "alert_namespaces": ["data-prod", "infra-prod"]}
+    }
+    ```
 
 Next we'll add the highlighting colors we'll use to our `~/.config/powerline/colorschemes/shell/default.json`:
 
-```json
-{
-	"name": "Default",
-	"groups": {
-		"kubernetes_cluster":         { "fg": "white", "bg": "gray6",     "attrs": [] },
-		"kubernetes_namespace":       { "fg": "white", "bg": "gray8",     "attrs": [] },
-		"kubernetes_namespace:alert": { "fg": "white", "bg": "brightred", "attrs": [] },
-		"kubernetes_user":            { "fg": "white", "bg": "gray9",     "attrs": [] }
-	}
-}
+    ```json
+    {
+	    "name": "Default",
+	    "groups": {
+		    "kubernetes_cluster":         { "fg": "white", "bg": "gray6",     "attrs": [] },
+		    "kubernetes_namespace":       { "fg": "white", "bg": "gray8",     "attrs": [] },
+		    "kubernetes_namespace:alert": { "fg": "white", "bg": "brightred", "attrs": [] },
+		    "kubernetes_user":            { "fg": "white", "bg": "gray9",     "attrs": [] }
+	    }
+    }
 ```
 
 
