@@ -40,7 +40,7 @@ Note that powerkube currently only supports Python 2.7 due to a dependency, `kub
     }
     ```
 
-Next we'll add the highlighting colors we'll use to our `~/.config/powerline/colorschemes/shell/default.json`:
+    Next we'll add the highlighting colors we'll use to our `~/.config/powerline/colorschemes/shell/default.json`:
 
     ```json
     {
@@ -52,7 +52,7 @@ Next we'll add the highlighting colors we'll use to our `~/.config/powerline/col
 		    "kubernetes_user":            { "fg": "white", "bg": "gray9",     "attrs": [] }
 	    }
     }
-```
+    ```
 
 
 4. You may need to reload powerline with `powerline-daemon --replace` to load the new settings. That's it!
