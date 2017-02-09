@@ -1,4 +1,4 @@
-from kubernetes import K8sConfig
+import kubernetes
 from powerline.theme import requires_segment_info
 
 _KUBE_SYMBOL = u'\U00002388 '
@@ -30,13 +30,13 @@ def context(pl, segment_info, show_cluster=False, show_namespace=True, show_user
     '''
     pl.debug('Running powerline-kubernetes')
     try:
-        context = K8sConfig().current_context_dict
+        context = kubernetes.K8sConfig().current_context_dict
     except Exception as e:
         pl.error(e)
         return
 
     render_context = segment_info['environ'].get('RENDER_POWERLINE_KUBERNETES', 'YES')
-    if render_context != 'YES':
+    if render_context != 'YES' or not any([show_cluster, show_namespace, show_user]):
         return []
 
     segments_list = []

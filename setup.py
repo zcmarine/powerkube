@@ -15,11 +15,13 @@ setup(
     package=['powerkube'],
     install_requires=INSTALL_REQUIRES,
     license='Copyright',
-    keywords='powerline kubernetes context segment',
+    keywords='powerline kubernetes k8s context segment',
     classifiers=[
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 2 :: Only',
         'Environment :: Console',
         'Intended Audience :: Developers',
-        'License :: Apache License 2.0',
+        'License :: OSI Approved :: Apache Software License',
         'Topic :: Terminals'
     ]
 )
