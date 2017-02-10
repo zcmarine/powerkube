@@ -19,7 +19,7 @@ Note that powerkube currently only supports Python 2.7 due to a dependency, `kub
 
 ## Installation
 
-1. **Add the Python package**.  Powerkube is not yet on pypi so we will need to either clone or download the repo and run `python setup.py install` to add it to our $PATH. We can verify that it has been correctly installed by running the following command from the terminal:
+1. **Add the Python package**.  Powerkube is not yet on pypi so we will need to either clone or download the repo and run `python setup.py develop` to add it to our $PATH. We can verify that it has been correctly installed by running the following command from the terminal:
 
     ```python
     python -c "import powerkube; print powerkube.__file__"
