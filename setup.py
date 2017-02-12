@@ -9,12 +9,12 @@ INSTALL_REQUIRES = [
 # (vincent.drl@gmail.com) and located at https://github.com/so0k/powerline-kubernetes
 setup(
     name='powerkube',
-    version='0.1.1',
+    version='0.1.3',
     description='A powerline segment to show kubernetes context items, with toggling and alert color functionality',
     author='Zach Marine',
     author_email='zcmarine@gmail.com',
     url='https://github.com/zcmarine/powerkube',
-    download_url='https://github.com/zcmarine/powerkube/tarball/0.1',
+    download_url='https://github.com/zcmarine/powerkube/tarball/0.1.3',
     packages=['powerkube'],
     install_requires=INSTALL_REQUIRES,
     license='Copyright',
