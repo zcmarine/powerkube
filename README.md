@@ -21,8 +21,8 @@ Note that powerkube currently only supports Python 2.7 due to a dependency, `kub
 
 1. **Add the Python package**.  Powerkube is available on pypi so you can install it with pip:
 
-    ```python
-    pip install powerkube
+    ```bash
+    pip install --user powerkube
     ```
 
 2. **Create a user configuration directory**. Once powerkube has been installed, we'll need to add it to our powerline shell's theme and colorscheme. The best way to do this is to alter our powerline user config, which will override the powerline defaults. If you don't already have a `~/.config/powerline/` folder, create it. Next we'll be copying some of the default powerline configs into this location. Find where powerline is installed by using `pip show powerline-status | grep 'Location'`, then navigate to the `config_files/` folder there. We'll be copying `config.json`, `themes/shell/default.json`, and `colorschemes/shell/default.json` to our `~/.config/powerline/` folder, adding the necessary folders to match that original file structure (i.e. adding the `themes/` and `colorschemes/` folders, etc.
