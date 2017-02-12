@@ -1,5 +1,5 @@
 test-upload:
-	python setup.py sdict upload -r pypitest
+	python setup.py sdist upload -r pypitest
 
 upload:
-	python setup.py sdict upload -r pypi
+	python setup.py sdist upload -r pypi
