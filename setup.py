@@ -5,13 +5,16 @@ INSTALL_REQUIRES = [
     'powerline-status',
     ]
 
+# Heavily inspired by the powerline-kubernetes library written by Vincent De Smet
+# (vincent.drl@gmail.com) and located at https://github.com/so0k/powerline-kubernetes
 setup(
-    name='powerkube',  # Heavily inspired by the powerline-kubernetes library
+    name='powerkube',
     version='0.1.0',
     description='A powerline segment to show kubernetes context items, with toggling and alert color functionality',
-    author='Zach Marine',  # powerline-kubernetes was written by Vincent De Smet
-    author_email='zcmarine@gmail.com',  # vincent.drl@gmail.com
-    url='https://github.com/zcmarine/powerkube',  # https://github.com/so0k/powerline-kubernetes
+    author='Zach Marine',
+    author_email='zcmarine@gmail.com',
+    url='https://github.com/zcmarine/powerkube',
+    download_url='https://github.com/zcmarine/powerkube/tarball/0.1',
     package=['powerkube'],
     install_requires=INSTALL_REQUIRES,
     license='Copyright',
